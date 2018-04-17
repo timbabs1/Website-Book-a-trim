@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Barber bookings page</title>
+    <link rel="stylesheet" href="css/barber_bookings.css">
+</head>
+
+<body>
+    <nav id="Nav">
+        <a href="/">Home</a></li>
+        <a href="trimmer_home">Trimmer Home</a>
+        <a href="barber_home">Barber Home</a>
+        <a href="about">About Page</a>
+    </nav>
+    <a id="log_out" href="/log_out_barber"> Log out</a>
+    <h1>Welcome to your bookings ${name}</h1>
+    <h2>Your bookings are shown below</h2>
+    <table>
+        <caption> List of bookings</caption>
+        <thead>
+            <tr>
+                <th>Trimmer name</th>
+                <th>Date</th>
+                <th>Time Slot1 (9-10)</th>
+                <th>Time Slot2 (10-11)</th>
+                <th>Time Slot3 (11-12)</th>
+                <th>Time Slot4 (12-13)</th>
+                <th>Time Slot5 (13-14)</th>
+                <th>Time Slot6 (14-15)</th>
+                <th>Time Slot7 (15-16)</th>
+                <th>Time Slot8 (16-17)</th>
+                <th>Time Slot9 (17-18)</th>
+                <th>Time Slot10 (18-19)</th>
+                <th>Time Slot11 (19-20)</th>
+                <th>Time Slot12 (20-21)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>${tname}</td>
+                <td>${date}</td>
+                <td>${time_slot1}</td>
+                <td>${time_slot2}</td>
+                <td>${time_slot3}</td>
+                <td>${time_slot4}</td>
+                <td>${time_slot5}</td>
+                <td>${time_slot6}</td>
+                <td>${time_slot7}</td>
+                <td>${time_slot8}</td>
+                <td>${time_slot9}</td>
+                <td>${time_slot10}</td>
+                <td>${time_slot11}</td>
+                <td>${time_slot12}</td>
+            </tr>
+        </tbody>
+    </ol>
+</body>

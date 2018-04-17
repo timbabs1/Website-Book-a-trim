@@ -1,0 +1,45 @@
+nav {
+    background-color: #000000;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    border: 3px solid;
+    padding: 10px;
+}
+
+#Nav a{
+    color: grey
+}
+
+#Nav a:hover{
+    color:orange
+}
+
+#Nav a:active{
+    color: aquamarine;
+}
+
+body {
+    background-image: url("/images/grey_background.jpg");
+}
+
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+#book_a_trim {
+    margin: auto;
+    width: 800px;
+}
+
+#log_out {
+    position:fixed;
+    right:10px;
+    top:5px;
+}

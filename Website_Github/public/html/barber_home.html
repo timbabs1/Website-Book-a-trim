@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Barber home page</title>
+    <link rel="stylesheet" href="css/barber_home.css">
+</head>
+
+<body>
+    <nav id="Nav">
+        <a href="/">Home</a></li>
+        <a href="trimmer_home">Trimmer Home</a>
+        <a href="barber_home">Barber Home</a>
+        <a href="about">About Page</a>
+    </nav>
+    <a id="log_out" href="/log_out_barber"> Log out</a>
+    <h1>Welcome to your portal ${name}</h1>
+    <h2>You can view your recent bookings below by clicking the 'View button'</h2>
+    <form action = "/barber_bookings" id="barber_book" method="GET">
+    <fieldset>
+        <legend>Shows both present and past bookings</legend>
+        <label><input type = "submit" value="View all bookings including past bookings" /></label>
+    </fieldset>
+    </form> 
+    <form action = "/barber_bookings2" id="barber_book2" method="GET">
+    <fieldset>
+        <legend>Or view your recent bookings</legend>
+        <label><input type = "submit" value="View recent bookings" /></label>
+    </fieldset>
+    </form> 
+    <form action = "/barber_bookings3" id="barber_book3" method="GET">
+    <fieldset>
+        <legend>Or view a booking for a specific date</legend>
+        <label><input type="date" name="bookings_date" id="datefield" min="2018-02-02"></label>
+        <label><input type = "submit" value="View bookings for a specific date" /></label>
+    </fieldset>
+    </form> 
+</body>
+<script src="/js/date_checker.js"></script>
+</html>

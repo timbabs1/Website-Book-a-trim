@@ -1,0 +1,15 @@
+barber in the database:
+
+Name, location of shop, address
+
+res.sendFile(`${__dirname}/html/barber.html`)
+
+cd CW2_1/
+
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+
+username = document.getElementById("barber_form.").barber_id.value
+
+password = document.getElementById("barber_form.").barber_pass.value
+
+`SELECT password FROM barber_data WHERE user_name = "${username}"`

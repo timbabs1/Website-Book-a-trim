@@ -1,0 +1,39 @@
+return res.render('trimmer_home', {locals: {name: req.query.trimmer_name}})
+            console.log('option 1')
+
+<script src="/public/js/date_checker.js" defer></script>
+
+<script type = "text/javascript">
+    console.log('page loaded')
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+     if(dd<10){
+            dd='0'+dd
+        } 
+        if(mm<10){
+            mm='0'+mm
+        } 
+    
+    today = yyyy+'-'+mm+'-'+dd;
+    console.log(today)
+    document.getElementById("datefield").setAttribute("min", today);
+    </script>
+
+if (check.number == 1) {
+        db.all(sql4, (err, rows) => {
+            if(err) {
+                check.number = 0
+                console.error(err.message)
+            } 
+            else check.number = 1
+        return callback(null, check)
+        })
+    }
+
+"${time_slot}", 
+
+console.log(row.time_slot_13_14)
+
+other pages could include hair-style suggestions

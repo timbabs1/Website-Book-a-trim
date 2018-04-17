@@ -1,0 +1,20 @@
+{
+  "name": "cw2_1",
+  "version": "1.0.0",
+  "description": "CW 2 205CDE",
+  "main": "index.js",
+  "dependencies": {
+    "express-es6-template-engine": "^2.0.3",
+    "expresss": "^0.0.0",
+    "express": "^4.16.3",
+    "request": "^2.85.0",
+    "sqlite3-promise": "^1.0.3",
+    "sqlite3": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Babatunde Haastrup",
+  "license": "ISC"
+}

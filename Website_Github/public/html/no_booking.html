@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Book a trim direct page</title>
+    <link rel="stylesheet" href="/css/no_bookings.css">
+</head>
+
+<body>
+    <nav id="Nav">
+        <a href="/">Home</a></li>
+        <a href="trimmer_home">Trimmer Home</a>
+        <a href="barber_home">Barber Home</a>
+        <a href="about">About Page</a>
+    </nav>
+    <a id="log_out" href="/log_out_trimmer"> Log out</a>
+    <h1>Hey ${tname}, No recent booking is available to show for the selected barber at the date selected</h1>
+    <h2>So get away and book whatever time slot suits you by using the time slot picker and form below</h2>
+    
+    <body>
+            <table>
+                    <caption> Different time slot legends are showing below</caption>
+                    <thead>
+                        <tr>
+                            <th>Time Slot1 (9-10)</th>
+                            <th>Time Slot2 (10-11)</th>
+                            <th>Time Slot3 (11-12)</th>
+                            <th>Time Slot4 (12-13)</th>
+                            <th>Time Slot5 (13-14)</th>
+                            <th>Time Slot6 (14-15)</th>
+                            <th>Time Slot7 (15-16)</th>
+                            <th>Time Slot8 (16-17)</th>
+                            <th>Time Slot9 (17-18)</th>
+                            <th>Time Slot10 (18-19)</th>
+                            <th>Time Slot11 (19-20)</th>
+                            <th>Time Slot12 (20-21)</th>
+                        </tr>
+                    </thead>
+            </table>
+            <form action = "/book_a_trim" id="book_a_trim" method="GET">
+                <fieldset>
+                <legend>enter your booking info below</legend>
+                <input required type="text" placeholder="e.g john" name="barber_name" value=${name}><br>
+                <input required type="date" name="barber_date" id="datefield" min="2018-02-02" value=${date}><br>
+                <input type = "submit" value="Book yo Trim" />
+
+            <select name="time_Slot_List" form="book_a_trim">
+                <option value="time_slot_9_10">Time Slot 1</option>
+                <option value="time_slot_10_11">Time Slot 2</option>
+                <option value="time_slot_11_12">Time Slot 3</option>
+                <option value="time_slot_12_13">Time Slot 4</option>
+                <option value="time_slot_13_14">Time Slot 5</option>
+                <option value="time_slot_14_15">Time Slot 6</option>
+                <option value="time_slot_15_16">Time Slot 7</option>
+                <option value="time_slot_16_17">Time Slot 8</option>
+                <option value="time_slot_17_18">Time Slot 9</option>
+                <option value="time_slot_18_19">Time Slot 10</option>
+                <option value="time_slot_19_20">Time Slot 11</option>
+                <option value="time_slot_20_21">Time Slot 12</option>
+            </select>
+            </fieldset>
+        </form>
+        </section>
+    </body>
+    <script src="/js/date_checker.js"></script>
+</html>

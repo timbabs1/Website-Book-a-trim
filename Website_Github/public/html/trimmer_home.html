@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Trimmer home page</title>
+    <link rel="stylesheet" href="css/trimmer_home.css">
+</head>
+
+<body>
+    <nav id="Nav">
+        <a href="/">Home</a></li>
+        <a href="trimmer_home">Trimmer Home</a>
+        <a href="barber_home">Barber Home</a>
+        <a href="about">About Page</a>
+    </nav>
+    <a id="log_out" href="/log_out_trimmer"> Log out</a>
+    <section>
+    <h1>Welcome back ${name}, are you ready to get that fresh trim or new haircut!!!</h1>
+    <h2>You can start by searching for your barber below to see their recent available time slots</h2>
+    <h3>Or You can use our search by date feature to search for your barber availablility times for a specific date</h3>
+    <section>
+        <form action = "/trim_bookings" id="trimmer_book" method="GET">
+        <fieldset>
+            <legend>Use our search by barber feature</legend>
+            <label><input required type="text" placeholder="e.g John_barbers" name="barber_search"></label><br>
+            <label><input type = "submit" value="Search for your Barber" /></label>
+        </fieldset>
+        </form>
+    </section>
+    <section>
+        <form action = "/trim_bookings_2" id="trimmer_book_2" method="GET">
+            <fieldset>
+            <legend>Or use our search by barber feature with a specific date in mind</legend>
+            <label><input required type="text" placeholder="e.g John_barbers" name="barber_search"></label><br>
+            <label><input type="date" name="barber_date" id="datefield" min="2018-02-02"></label><br>
+            <label><input type = "submit" value="Search for your Barber with a specific date" /></label>
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <form action = "/trim_bookings_3" id="trimmer_book_3" method="GET">
+        <fieldset>
+        <legend>Or view a list of all barbers with recent availability times. Note: this only shows barbers with recent bookings not all barbers available </legend>
+        <label><input type = "submit" value="List all barbers" /></label>
+        </fieldset>
+        </form>
+    </section>
+    <section>
+        <h3>All barbers available are shown here. You can view a list of different available barbers in the London and Coventry region below</h3>
+        <div id="list_item">
+        <ul>
+            ${bname}
+        </ul>
+        </div>
+    </section>
+</body>
+<script src="/js/date_checker.js"></script>
+</html>
